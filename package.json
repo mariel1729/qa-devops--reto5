@@ -1,0 +1,10 @@
+{
+  "name": "qa-devops-ai-challenge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Proyecto base para el reto de QA DevOps e IA",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --test"
+  }
+}
