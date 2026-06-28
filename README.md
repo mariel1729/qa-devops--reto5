@@ -33,13 +33,17 @@ El workflow QA CI Pipeline se ejecuta en cada Pull Request hacia main y también
 Para completar el reto de calidad avanzada, puedes usar estos recursos prácticos:
 - [performance.md](performance.md): guía para evaluar rendimiento con Lighthouse y WebPageTest.
 - [accessibility.md](accessibility.md): checklist básica de accesibilidad y herramientas recomendadas.
-- [ai-analysis.md](ai-analysis.md): ejemplo de uso de IA para resumir hallazgos y preparar reportes.
+- [ai-analysis.md](ai-analysis.md): matriz de pruebas para un asistente de IA y sección de uso responsable de IA.
 - [index.html](index.html): ejemplo simple de la tienda QA Store para probar accesibilidad y rendimiento.
+- [docs/test-plan.md](docs/test-plan.md): quality gates, criterios de aceptación y evidencia requerida.
+- [performance/k6-api-smoke.js](performance/k6-api-smoke.js): script básico de K6 para validar una API pública.
+- [performance/jmeter/qa-store-load-test.jmx](performance/jmeter/qa-store-load-test.jmx): escenario de JMeter con usuarios virtuales y aserciones básicas.
 
 ### Sugerencia de ejecución
 1. Abrir [index.html](index.html) en un navegador.
 2. Ejecutar Lighthouse para obtener métricas de rendimiento y accesibilidad.
-3. Guardar los resultados y resumirlos con la guía de [ai-analysis.md](ai-analysis.md).
+3. Ejecutar `k6 run performance/k6-api-smoke.js` para validar la carga y los thresholds.
+4. Guardar los resultados y resumirlos con la guía de [ai-analysis.md](ai-analysis.md).
 
 ## Resumen para portafolio QA
 Puedes usar [portfolio-summary.md](portfolio-summary.md) como texto base para presentar el reto en tu portafolio o en una entrevista técnica.
