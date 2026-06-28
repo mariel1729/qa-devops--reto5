@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QA Store</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 2rem; line-height: 1.5; }
+      main { max-width: 700px; margin: 0 auto; }
+      button { padding: 0.6rem 1rem; cursor: pointer; }
+      .product { border: 1px solid #ddd; padding: 1rem; margin-bottom: 1rem; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>QA Store</h1>
+      <p>Bienvenido a la tienda de ejemplo para pruebas de accesibilidad y performance.</p>
+
+      <section aria-labelledby="products-title">
+        <h2 id="products-title">Productos destacados</h2>
+        <article class="product">
+          <h3>Camiseta QA</h3>
+          <p>Precio: $20</p>
+          <button type="button">Añadir al carrito</button>
+        </article>
+        <article class="product">
+          <h3>Mochila DevOps</h3>
+          <p>Precio: $45</p>
+          <button type="button">Añadir al carrito</button>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

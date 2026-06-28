@@ -28,3 +28,15 @@ El workflow QA CI Pipeline se ejecuta en cada Pull Request hacia main y también
 - ejecución de pruebas automatizadas
 - generación de un reporte de ejecución en la carpeta reports
 - publicación de artefactos para revisión posterior
+
+## Pruebas de performance, accesibilidad e IA
+Para completar el reto de calidad avanzada, puedes usar estos recursos prácticos:
+- [performance.md](performance.md): guía para evaluar rendimiento con Lighthouse y WebPageTest.
+- [accessibility.md](accessibility.md): checklist básica de accesibilidad y herramientas recomendadas.
+- [ai-analysis.md](ai-analysis.md): ejemplo de uso de IA para resumir hallazgos y preparar reportes.
+- [index.html](index.html): ejemplo simple de la tienda QA Store para probar accesibilidad y rendimiento.
+
+### Sugerencia de ejecución
+1. Abrir [index.html](index.html) en un navegador.
+2. Ejecutar Lighthouse para obtener métricas de rendimiento y accesibilidad.
+3. Guardar los resultados y resumirlos con la guía de [ai-analysis.md](ai-analysis.md).
