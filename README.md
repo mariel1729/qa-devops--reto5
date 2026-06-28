@@ -40,3 +40,6 @@ Para completar el reto de calidad avanzada, puedes usar estos recursos práctico
 1. Abrir [index.html](index.html) en un navegador.
 2. Ejecutar Lighthouse para obtener métricas de rendimiento y accesibilidad.
 3. Guardar los resultados y resumirlos con la guía de [ai-analysis.md](ai-analysis.md).
+
+## Resumen para portafolio QA
+Puedes usar [portfolio-summary.md](portfolio-summary.md) como texto base para presentar el reto en tu portafolio o en una entrevista técnica.
