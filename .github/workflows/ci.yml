@@ -1,28 +1,47 @@
-name: QA CI
+name: QA CI Pipeline
 
 on:
-  push:
-    branches:
-      - '**'
   pull_request:
     branches:
       - main
+  push:
+    branches:
+      - main
+      - feature/**
+  workflow_dispatch:
 
 jobs:
   quality-checks:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
 
     steps:
-      - name: Checkout code
+      - name: Checkout del repositorio
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
 
-      - name: Install dependencies
+      - name: Instalar dependencias
         run: npm install
 
-      - name: Run tests
-        run: npm test
+      - name: Ejecutar pruebas y generar reporte
+        run: |
+          mkdir -p reports
+          set +e
+          npm test 2>&1 | tee reports/test-report.txt
+          test_exit_code=${PIPESTATUS[0]}
+          echo "EXIT_CODE=$test_exit_code" | tee -a reports/test-report.txt
+          exit $test_exit_code
+
+      - name: Publicar artefactos
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qa-ci-report
+          path: reports/
+          if-no-files-found: warn

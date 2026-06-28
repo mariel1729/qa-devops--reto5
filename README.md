@@ -20,3 +20,11 @@ Este repositorio acompaña el reto de calidad avanzada para una tienda en línea
 
 ## Calidad esperada
 El flujo de CI valida que los cambios cumplan reglas mínimas de calidad antes de integrarse a la rama principal.
+
+## GitHub Actions y evidencias
+El workflow QA CI Pipeline se ejecuta en cada Pull Request hacia main y también puede lanzarse manualmente. Incluye:
+- checkout del repositorio
+- instalación de dependencias
+- ejecución de pruebas automatizadas
+- generación de un reporte de ejecución en la carpeta reports
+- publicación de artefactos para revisión posterior
