@@ -47,3 +47,4 @@ Para completar el reto de calidad avanzada, puedes usar estos recursos práctico
 
 ## Resumen para portafolio QA
 Puedes usar [portfolio-summary.md](portfolio-summary.md) como texto base para presentar el reto en tu portafolio o en una entrevista técnica.
+Nueva evidencia QA DevOps en feature
